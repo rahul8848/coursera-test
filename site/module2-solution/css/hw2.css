@@ -1,0 +1,81 @@
+
+p {
+  width: 90%;
+  padding: 10px;
+  font-family: Helvetica;
+  background-color: #A52A2A;
+}
+section {
+  border-bottom: solid black;
+  border-left: solid black;
+  width: 20%;
+  text-align: center;
+  float: right;
+}
+section.s1 {
+  color: blue;
+  background: white;
+}
+section.s2 {
+  color: blue;
+  background: yellow;
+}
+section.s3 {
+  color: white;
+  background: grey;
+}
+
+
+/* Simple Responsive Framework. */
+.row {
+  width: 100%;
+}
+
+/********** Desktop only **********/
+@media (min-width: 992px) {
+  .col-lg-1{
+    float: left;
+    border: solid black;
+    width: 32%;
+    top: 0;
+    bottom: 60px;
+    position: relative;
+    background-color: #A52A2A;
+    margin: 5px;
+  }
+}
+
+/********** Mobile devices only **********/
+@media (max-width: 767px) {
+  .col-md-1{
+    float: inherit;
+    border: solid black;
+    top: 0;
+    bottom: 60px;
+    position: relative;
+    background-color: #A52A2A;
+    width: 100%;
+    margin-bottom: 5px;    
+  }
+  
+}
+
+
+/********** Tablet devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-td-1{
+    float: left;
+    border: solid black;
+    top: 0;
+    bottom: 60px;
+    position: relative;
+    overflow: hidden;
+    background-color: #A52A2A;
+    width: 48%;
+    margin: 5px;
+  }
+  .col-lg-1:last-of-type {
+    width: 97%;
+  }
+}
+
